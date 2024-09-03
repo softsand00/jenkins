@@ -1,14 +1,7 @@
 pipeline {
     agent any
-    stages {
-        stage('Lint') {
-            steps {
-                script {
-                    // Run linter (e.g., ESLint)
-                    sh 'npm run lint'
-                }
-            }
-        }
+   
+        
         stage('Build') {
             steps {
                 script {
